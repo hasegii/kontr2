@@ -13,7 +13,9 @@ void main(List<String> arguments) async {
   int idMin = 0;
   for (dynamic el in all.cars) {
     String subStr = el.price;
-    subStr = subStr.substring(1, 8);
+    subStr = subStr.substring(
+      1,
+    );
     double curPrice = double.parse(subStr);
     if (curPrice < minPrice) {
       minPrice = curPrice;
